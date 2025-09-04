@@ -60,9 +60,9 @@
   </div>
 
   <div class="container text-center food-btns">
-    <button class="btn btn-custom">たべものをいれる</button>
-    <button class="btn btn-custom">なかをみる</button>
-    <button class="btn btn-custom">たべものをだす</button>
+    <a href="insert_food.php" class="btn btn-custom" role="button">たべものをいれる</a>
+    <a href="look_inside_refrigerato.php" class="btn btn-custom" role="button">なかをみる</a>
+    <a href="putout_food.php" class="btn btn-custom" role="button">たべものをだす</a>
   </div>
 
 </body>
