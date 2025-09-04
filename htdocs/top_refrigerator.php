@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>れいぞうこのアプリ</title>
+  <title>れいぞうこアプリ</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
@@ -12,36 +12,72 @@
                         radial-gradient(circle, #ffe5a4 5px, transparent 6px);
       background-position: 0 0, 40px 40px, 20px 20px;
       background-size: 80px 80px;
+      font-family: sans-serif;
     }
+
     .fridge {
-      width: 250px;
-      height: 400px;
+      width: 260px;
+      height: 420px;
       background-color: #cfe2ff;
       border-radius: 30px;
       margin: 50px auto;
       position: relative;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
     }
-    .fridge-door-line {
-      width: 90%;
-      height: 5px;
-      background-color: #333;
+
+    .fridge-top,
+    .fridge-bottom {
+      width: 100%;
+      background-color: #cfe2ff;
+      border-radius: 30px;
+    }
+
+    .fridge-top {
+      height: 45%;
+      border-bottom: 3px solid #555; /* 区切り線 */
+      position: relative;
+    }
+
+    .fridge-bottom {
+      height: 55%;
+      position: relative;
+    }
+
+    .handle {
+      width: 12px;
+      height: 60px;
+      background-color: white;
+      border-radius: 10px;
       position: absolute;
-      top: 45%;
-      left: 5%;
+      left: 20px;
     }
+
+    .top-handle {
+      top: 40%;
+    }
+
+    .bottom-handle {
+      top: 30%;
+    }
+
     .speech-bubble {
       position: absolute;
-      top: 40px;
-      left: 40px;
+      top: 10px;
+      right: 15px;
       background: #fff;
       border-radius: 10px;
       padding: 10px;
       font-size: 14px;
       box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      width: 160px;
+      text-align: center;
     }
+
     .food-btns {
       margin-top: 30px;
     }
+
     .btn-custom {
       background-color: #ffd6d6;
       border: none;
@@ -49,6 +85,14 @@
       margin: 10px;
       border-radius: 10px;
       font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      display: inline-block;
+    }
+
+    .btn-custom:hover {
+      background-color: #ffbcbc;
     }
   </style>
 </head>
